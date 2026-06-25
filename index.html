@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Inicio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="barra-superior-rosa py-2 px-3">
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between gap-2">
+            
+            <div class="d-flex gap-1">
+                <a href="#" class="btn btn-light btn-sm font-weight-bold" style="width:30px; height:30px; line-height:15px;">←</a>
+                <a href="#" class="btn btn-light btn-sm font-weight-bold" style="width:30px; height:30px; line-height:15px;">→</a>
+                <a href="#" class="btn btn-light btn-sm font-weight-bold" style="width:30px; height:30px; line-height:15px;">⭯</a>
+            </div>
+
+            <div class="flex-grow-1 mx-2 mx-md-5" style="max-width: 500px;">
+                <input type="text" placeholder="Buscar..." class="form-control form-control-sm input-busqueda-personalizado">
+            </div>
+
+            <div>   
+                <a href="usuario.html" class="btn p-0">
+                    <img src="imagenes/usuario2.jpg" alt="User" class="rounded-circle-user bg-white" style="width:32px; height:32px; border: 1px solid #ccc;">
+                </a>
+            </div> 
+        </div>
+    </div>
+
+    <nav class="barra-navegacion-principal py-3 border-bottom bg-white">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            
+            <div class="bloque-logo">
+                <img src="imagenes/logoCA.png" alt="Crystal Art Logo" class="img-fluid logo-marca" style="max-width: 140px; height: auto; display: block;">
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a href="nosotros.html" class="btn btn-rosacl">Sobre Nosotros</a>
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-rosacl dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Catálogo de Productos
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="kits.html">Kits</a></li>
+                        <li><a class="dropdown-item" href="lienzos.html">Lienzos</a></li>
+                        <li><a class="dropdown-item" href="piedras.html">Piedras</a></li>
+                        <li><a class="dropdown-item" href="resina.html">Resina</a></li>
+                        <li><a class="dropdown-item" href="boligrafos.html">Boligrafos</a></li>
+                        <li><a class="dropdown-item" href="figuras3d.html">Figuras 3D</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
+                    </ul>
+                </div>
+
+                <a href="contactos.html" class="btn btn-rosacl">Contactos y Preguntas</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-4 container-carrusel-fijo">
+        <div id="demo" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/productos/piezaprincipal.jpg" alt="Producto Principal" class="d-block w-100 img-carrusel-ajustada">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/productos/packuno.jpg" alt="Pack Uno" class="d-block w-100 img-carrusel-ajustada">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/productos/packdos.png" alt="Pack Dos" class="d-block w-100 img-carrusel-ajustada">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="seccion-sugerencias-completa py-4 mt-5 bg-rosa-seccion text-center">
+        <h2 class="mb-4 fw-bold titulo-sugerencias">Sugerencias</h2>
+
+        <div class="contenedor-cinta-horizontal w-100 overflow-x-auto py-2">
+            <div class="d-flex justify-content-start justify-content-md-center gap-3 px-3">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91IH2KgwMjL._AC_UL165_SR165,165_.jpg" alt="Sugerencia 1" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/71RwDy8+YaL._AC_UL320_.jpg" alt="Sugerencia 2" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/813RB2X0-NL._AC_UL320_.jpg" alt="Sugerencia 3" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/81D5IQF25HL._AC_UL320_.jpg" alt="Sugerencia 4" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/81kk+V+JCiS._AC_UL320_.jpg" alt="Sugerencia 5" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/81iwgEVAVGL._AC_UL320_.jpg" alt="Sugerencia 6" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/91e9y7HDpTL._AC_UL320_.jpg" alt="Sugerencia 7" class="tarjeta-sugerencia-img">
+                <img src="https://m.media-amazon.com/images/I/91mSvVbA+XL._AC_UL320_.jpg" alt="Sugerencia 8" class="tarjeta-sugerencia-img">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
