@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Producto - Crystal Art</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <style>
+        body {
+            background-color: #E29495; 
+        }
+        .bg-cabecera-blanca {
+            background-color: #FFFFFF;
+        }
+        .barra-detalle-producto {
+            background-color: #F1D4D4;
+            color: #333333;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+        }
+        .tarjeta-producto-central {
+            background-color: #F5C1C2;
+            border: 1px solid #E0A4A5;
+        }
+        .ranking-voto .bi-star, .ranking-voto .bi-star-fill {
+            cursor: pointer;
+            transition: color 0.1s ease, transform 0.1s ease;
+        }
+        .ranking-voto .bi-star:hover, .ranking-voto .bi-star-fill:hover {
+            transform: scale(1.15);
+        }
+        .texto-info-kit {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.1rem;
+            color: #222222;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid px-0 d-flex flex-column" style="min-height: 100vh;">
+
+        <div class="barra-superior-rosa py-2 px-3">
+            <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <div class="d-flex gap-1">
+                    <a href="index.html" class="btn btn-light btn-sm font-weight-bold" style="width:30px; height:30px; line-height:15px;">←</a>
+                    <a href="#" class="btn btn-light btn-sm font-weight-bold" style="width:30px; height:30px; line-height:15px;">→</a>
+                    <a href="#" class="btn btn-light btn-sm font-weight-bold" style="width:30px; height:30px; line-height:15px;">⭯</a>
+                </div>
+                <div class="flex-grow-1 mx-2 mx-md-5" style="max-width: 500px;">
+                    <input type="text" placeholder="Buscar..." class="form-control form-control-sm input-busqueda-personalizado">
+                </div>
+                <div>   
+                    <a href="usuario.html" class="btn p-0">
+                        <img src="imagenes/usuario2.jpg" alt="User" class="rounded-circle" style="width:30px; height:30px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <header class="bg-cabecera-blanca py-3 shadow-sm">
+            <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+                <div>
+                    <img src="imagenes/logoCA.png" alt="Crystal Art" style="max-height: 60px;">
+                </div>
+                
+                <nav class="d-flex flex-wrap gap-2">
+                    <a href="index.html" class="btn btn-rosacl">Inicio</a>
+                    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-rosacl dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalogo de Productos
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="lienzos.html">Lienzos</a></li>
+                            <li><a class="dropdown-item" href="piedras.html">Piedras</a></li>
+                            <li><a class="dropdown-item" href="resina.html">Resina</a></li>
+                            <li><a class="dropdown-item" href="boligrafos.html">Boligrafos</a></li>
+                            <li><a class="dropdown-item" href="figuras3d.html">Figuras 3D</a></li>
+                            <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="contactos.html" class="btn btn-rosacl">Contactos y Preguntas</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="barra-detalle-producto w-100 text-center py-2 shadow-sm mb-4">
+            <strong>Detalle del Producto</strong>
+        </div>
+
+        <main class="container my-4 flex-grow-1">
+            <div class="mx-auto p-4 rounded shadow tarjeta-producto-central" style="max-width: 480px; width: 100%;">
+                
+                <div class="mb-4">
+                    <img src="imagenes/productos/piezaprincipal.jpg" alt="Vista del Producto" class="img-fluid rounded shadow-sm w-100">
+                </div>
+
+                <div class="ranking-voto mb-4 fs-2 text-warning text-center" id="contenedorEstrellas">
+                    <i class="bi bi-star" data-value="1"></i>
+                    <i class="bi bi-star" data-value="2"></i>
+                    <i class="bi bi-star" data-value="3"></i>
+                    <i class="bi bi-star" data-value="4"></i>
+                    <i class="bi bi-star" data-value="5"></i>
+                </div>
+
+                <div class="texto-info-kit text-start mb-4 p-3 bg-white border rounded shadow-sm">
+                    <p class="mb-2"><strong>Información del Kit de Arte:</strong></p>
+                    <p class="mb-1"><i class="bi bi-caret-right-fill text-muted"></i> Kit completo de Diamond Painting con herramientas premium.</p>
+                    <p class="mb-1"><i class="bi bi-caret-right-fill text-muted"></i> Lienzo impermeable con adhesivo fuerte de alta durabilidad.</p>
+                    <p class="mb-1"><i class="bi bi-caret-right-fill text-muted"></i> Cristales facetados brillantes de material eco-resina de 2.8mm.</p>
+                    <p class="mb-0"><i class="bi bi-caret-right-fill text-muted"></i> Ideal para decoración de interiores y relajación creativa.</p>
+                </div>
+
+                <div class="mb-4 text-start bg-light p-3 border rounded shadow-sm">
+                    <label for="cantidadUnidades" class="form-label fw-bold d-block text-center text-sm-start" style="font-family: 'Times New Roman', Times, serif;">Seleccione Unidades:</label>
+                    <input type="number" id="cantidadUnidades" class="form-control text-center mx-auto mx-sm-0" value="1" min="1" max="99" style="max-width: 100px; font-weight: bold; font-size: 1.1rem;">
+                </div>
+
+                <div class="mb-4 text-start bg-light p-3 border rounded shadow-sm" style="font-family: 'Times New Roman', Times, serif;">
+                    <h6 class="mb-3 border-bottom pb-2 fw-bold text-secondary">Ingresar Tarjeta Bancaria</h6>
+                    
+                    <div class="mb-3">
+                        <input type="text" class="form-control font-monospace" placeholder="Número de Tarjeta (16 dígitos)" maxlength="16">
+                    </div>
+                    
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <input type="text" class="form-control text-center" placeholder="MM/AA" maxlength="5">
+                        </div>
+                        <div class="col-6">
+                            <input type="password" class="form-control text-center font-monospace" placeholder="CVC" maxlength="3">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <a href="comprar.html" class="w-100 text-decoration-none d-block">
+                        <button type="button" class="btn btn-rosacl btn-lg w-100 py-2 fs-4 fw-bold shadow-sm">COMPRAR</button>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
