@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Producto - Crystal Art</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <style>
+        body {
+            background-color: #E29495 !important; 
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow-x: hidden !important; 
+        }
+        .bg-cabecera-blanca {
+            background-color: #FFFFFF !important;
+        }
+        .barra-detalle-producto {
+            background-color: #F1D4D4 !important;
+            color: #333333 !important;
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 1.2rem !important;
+        }
+        .tarjeta-producto-central {
+            background-color: #F5C1C2 !important;
+            border: 1px solid #E0A4A5 !important;
+        }
+        .texto-descripcion {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 1.05rem !important;
+            color: #111111 !important;
+            line-height: 1.5 !important;
+            text-align: justify !important;
+        }
+
+        .grid-centrado-responsivo {
+            display: grid !important;
+            place-items: center !important; 
+            width: 100% !important;
+            min-height: 60vh !important;
+            padding: 20px 15px !important;
+            box-sizing: border-box !important;
+            float: none !important;
+            clear: both !important;
+        }
+
+        .tarjeta-elastica {
+            width: 100% !important;
+            max-width: 460px !important; 
+            box-sizing: border-box !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            margin: 0 auto !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barra-superior-rosa py-2 px-3">
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between gap-2">
+            <div class="d-flex gap-1">
+                <a href="index.html" class="btn btn-light btn-sm font-weight-bold d-flex align-items-center justify-content-center" style="width:30px; height:30px;">←</a>
+                <a href="#" class="btn btn-light btn-sm font-weight-bold d-flex align-items-center justify-content-center" style="width:30px; height:30px;">→</a>
+                <a href="#" class="btn btn-light btn-sm font-weight-bold d-flex align-items-center justify-content-center" style="width:30px; height:30px;">⭯</a>
+            </div>
+            <div class="flex-grow-1 mx-2 mx-md-5" style="max-width: 500px;">
+                <input type="text" placeholder="Buscar..." class="form-control form-control-sm input-busqueda-personalizado">
+            </div>
+            <div>   
+                <a href="usuario.html" class="btn p-0">
+                    <img src="imagenes/usuario2.jpg" alt="Usuario" style="width:30px; height:30px;" class="rounded-circle">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <header class="bg-cabecera-blanca py-3 shadow-sm">
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+            <div>
+                <img src="imagenes/logoCA.png" alt="Crystal Art" style="max-height: 60px;">
+            </div>
+            <nav class="d-flex flex-wrap gap-2">
+                <a href="index.html" class="btn btn-rosacl">Inicio</a>
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-rosacl dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Catálogo de Productos
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="lienzos.html">Lienzos</a></li>
+                        <li><a class="dropdown-item" href="piedras.html">Piedras</a></li>
+                        <li><a class="dropdown-item" href="resina.html">Resina</a></li>
+                        <li><a class="dropdown-item" href="boligrafos.html">Bolígrafos</a></li>
+                        <li><a class="dropdown-item" href="figuras3d.html">Figuras 3D</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
+                    </ul>
+                </div>
+
+                <a href="contactos.html" class="btn btn-rosacl">Contactos y Preguntas</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="barra-detalle-producto w-100 text-center py-2 shadow-sm">
+        <strong>Detalle del Producto</strong>
+    </div>
+
+    <main class="grid-centrado-responsivo">
+        
+        <div class="p-4 rounded shadow tarjeta-producto-central tarjeta-elastica">
+            
+            <div class="mb-4">
+                <img src="imagenes/productos/piezaprincipal.jpg" alt="Producto Crystal Art" class="img-fluid rounded shadow-sm w-100" style="height: auto !important;">
+            </div>
+
+            <div class="texto-descripcion bg-white p-3 rounded mb-4 shadow-sm">
+                <p class="fw-bold text-center mb-3">¡Dale vida a tus espacios con el brillo de los cristales!</p>
+                
+                <p class="mb-3">
+                    Este kit premium de Diamond Painting incluye todo lo necesario para comenzar: un lienzo adhesivo de alta fidelidad con un diseño exclusivo, herramientas de colocación y cristales facetados que capturan la luz de manera espectacular.
+                </p>
+                
+                <p class="mb-0">
+                    Es una actividad perfecta para liberar el estrés, desarrollar tu concentración y crear una deslumbrante obra de arte hecha completamente con tus propias manos.
+                </p>
+            </div>
+            <div>
+                <a href="producto.html" class="w-100 text-decoration-none d-block">
+                    <button type="button" class="btn btn-light btn-lg w-100 py-2 fs-5 fw-bold text-dark shadow-sm">COMPRAR</button>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
